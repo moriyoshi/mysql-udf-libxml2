@@ -1,5 +1,5 @@
 /*
- * cURL UDF 
+ * libxml2 UDF 
  */
 #include <stdio.h>
 #include <string.h>
