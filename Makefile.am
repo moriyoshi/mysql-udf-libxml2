@@ -1,0 +1,9 @@
+pkglibdir=@MYSQL_PLUGIN_DIR@
+pkglib_LTLIBRARIES=xml-libxml2.la
+noinst_FILES=xml-libxml2.la xml-libxml2.a
+xml_libxml2_la_SOURCES=mysql_udf_libxml2.c
+xml_libxml2_la_LDFLAGS=-module -avoid-version
+xml_libxml2_la_LIBADD=@XML_LIBS@
+AM_CPPFLAGS=@XML_CPPFLAGS@
+INCLUDES=@INCLUDES@
+EXTRA_DIST=COPYING NEWS README CREDITS ChangeLog INSTALL install-sh missing mkinstalldirs
